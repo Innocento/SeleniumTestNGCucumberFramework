@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    // Selenium Dependency
+    implementation 'org.seleniumhq.selenium:selenium-java:4.1.3'
+    // TestNG Dependency
+    testImplementation 'org.testng:testng:7.5'
+    // Cucumber java Deependency
+    implementation 'io.cucumber:cucumber-java:7.2.3'
+}
+
+test {
+    useJUnitPlatform()
+}
