@@ -18,6 +18,11 @@ dependencies {
     testImplementation 'org.testng:testng:7.5'
     // Cucumber java Deependency
     implementation 'io.cucumber:cucumber-java:7.2.3'
+    // Adding JUnit Dependency
+    testImplementation 'junit:junit:4.13.2'
+    // Adding cucumber JUnit
+    testImplementation 'io.cucumber:cucumber-junit:7.2.3'
+
 }
 
 test {
