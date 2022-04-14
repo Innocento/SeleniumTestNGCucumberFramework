@@ -6,17 +6,17 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Login {
-    @Given("user is on login page")
+    @Given("browser is open")
     public void user_is_on_login_page() {
         System.out.println("Test 1");
     }
 
-    @When("user enters username and password")
+    @And("user is on login page")
     public void user_enters_username_and_password() {
         System.out.println("Test 2");
     }
 
-    @And("clicks on login button")
+    @When("user enters username and password")
     public void clicks_on_login_button() {
         System.out.println("Test 3");
     }
